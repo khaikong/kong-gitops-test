@@ -30,7 +30,7 @@ services:
 - connect_timeout: 60000
   host: httpbin.org
   name: test-svc-2
-  path: /anything
+  path: /get
   port: 80
   protocol: http
   read_timeout: 60000
@@ -40,7 +40,7 @@ services:
     name: test-route
     path_handling: v0
     paths:
-    - /test
+    - /hello
     preserve_host: false
     protocols:
     - http
